@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS EXAMPLE</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body {
+            background-color: #333333;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 1000px auto;
+            background-color: #555555;
+            display: flex;
+            height: 800px;
+            justify-content: space-between;
+        }
+        ul {
+            list-style: none;
+            background-color: #222222;
+            width: 40%;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            background-color: #777777;
+            height: 30%;
+            margin: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1>AOS EXAMPLE</h1>
+    <div class="container">
+        <ul>
+            <li data-aos="fade-left"
+            data-aos-delay="100"
+            data-aos-duration="2000"></li>
+            
+            <li data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="2000"></li>
+            <li></li>
+        </ul>
+        <ul>
+            <li data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="2000"></li>
+
+            <li data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="2000"></li>
+            <li></li>
+        </ul>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
